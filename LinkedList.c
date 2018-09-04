@@ -50,6 +50,7 @@ struct node* new_node(int k)
 void print_list()
 {
   struct node* p=head;
+  printf("List 1\n");
   while(p)
   {
     if(p->next==NULL)
@@ -59,7 +60,7 @@ void print_list()
     p=p->next;
   }
   printf("\n");
-
+  printf("List 2\n");
   p=head_1;
   while(p)
   {
@@ -70,6 +71,7 @@ void print_list()
     p=p->next;
   }
   printf("\n");
+  printf("List 3\n");
   p=head_2;
   while(p)
   {
@@ -80,6 +82,7 @@ void print_list()
     p=p->next;
   }
   printf("\n");
+  printf("List 4\n");
   p=head_3;
   while(p)
   {
@@ -90,6 +93,7 @@ void print_list()
     p=p->next;
   }
   printf("\n");
+  printf("List 5\n");
   p=head_4;
   while(p)
   {
@@ -101,6 +105,7 @@ void print_list()
   }
   printf("\n");
   p=head_5;
+  printf("List 6\n");
   while(p)
   {
     if(p->next==NULL)
@@ -110,6 +115,7 @@ void print_list()
     p=p->next;
   }
   printf("\n");
+  printf("List 7\n");
   p=head_6;
   while(p)
   {
@@ -120,6 +126,7 @@ void print_list()
     p=p->next;
   }
   printf("\n");
+  printf("List 8\n");
   p=head_7;
   while(p)
   {
@@ -148,6 +155,7 @@ void append_node(int key)
       }
       p->next=newnode;
     }
+
 }
 void append_node_5(int key)
 {
@@ -223,7 +231,7 @@ void remove_duplicate()
 }
 int length()
 {
-  struct node* p=head_2;
+  struct node* p=head_4;
   int c=0;
   while(p!=NULL)
   {
@@ -474,10 +482,11 @@ void reverse()
     head_2=a;
   }
 }
-/*void reverse_kth(int k)
+void reverse_kth(int k)
 {
-  struct node* p=head_2;
+  struct node* p=head_4;
   int z=ceil(length()/k);
+  printf("%d\n",z);
   for(int j=0;j<z;j++)
   {
     struct node* q=NULL;
@@ -529,11 +538,16 @@ void reverse()
 
     if(j==0)
     {
-      head_2=q;
+      head_4=q;
     }
     else
     {
-      start->next=q;
+      struct node* o=head_4;
+      for(int ii=0;ii<j*k-1;ii++)
+      {
+        o=o->next;
+      }
+      o->next=q;
     }
     struct node* qq=q;
     while(qq->next!=NULL)
@@ -544,7 +558,7 @@ void reverse()
 
   }
 
-}*/
+}
 
 void merge_alt_2()
 {
@@ -977,29 +991,29 @@ void top()
 
 int main()
 {
-  int k[]={10,20,30};
-  for(int i=0;i<3;i++)
+  int k[]={10,20,30,46,33,12,45,122,45,13,3,31,169,76,11,311,9,34,56};
+  for(int i=0;i<19;i++)
   {
     append_node(k[i]);
   }
   int kk[]={0,1,2,2,1,0,0,2,0,1,1,0};
-  for(int i=0;i<6;i++)
+  for(int i=0;i<12;i++)
   {
     append_node_5(kk[i]);
     push(kk[i]+1);
   }
   insert_sortedlist(4);
-//  print_list();
+  // print_list();
   insert_sortedlist(11);
-//  print_list();
+  //  print_list();
   insert_sortedlist(4);
-//  print_list();
+  //  print_list();
   insert_sortedlist(54);
-//  print_list();
+  //  print_list();
   insert_sortedlist(16);
   insert_sortedlist(16);
   //bubble_sort();
-//  print_list();
+  //  print_list();
   int leng=length();
   struct node* p=head;
   struct node* q=head;
@@ -1015,19 +1029,19 @@ int main()
   head_1=p;
   q->next=NULL;
   printf("\n");*/
-  //print_list();
+  print_list();
   remove_duplicate();
-  //print_list();
+  print_list();
   even_end();
   print_list();
   alt_element();
   print_list();
-  merge_alt();
-  print_list();
+//  merge_alt();
+//  print_list();
   kth(3);
   printf("\n");
   only_even();
-  //print_list();
+  print_list();
   merge_sort(&head_2);
   print_list();
   intersection();
@@ -1038,43 +1052,45 @@ int main()
 //  print_list();
   bubble_sort();
   merge_end();
- print_list();
-//  dele_m(2,2);
-//  print_list();
-  rearrange();
   print_list();
-  last_front();
+  dele_m(2,2);
   print_list();
-//  sort012();
+//  rearrange();
 //  print_list();
-  //remove_duplicate_1();
-  //print_list();
-  //rearrange_eo();
+//  last_front();
 //  print_list();
-   palindrome();
-    print_list();
-
-    top();
-    pop();
-    print_list();
-  /*  struct Node* root = NULL;
-    root = allocateNode(1);
-    root->left = allocateNode(2);
-    root->right = allocateNode(3);
-    root->left->left = allocateNode(4);
-    root->left->right = allocateNode(5);
-    root->right->right = allocateNode(6);
-    root->left->left->left = allocateNode(7);
-    struct Node *L1 = root->left->left->left;
-    struct Node *L2 = root->left->right;
-    struct Node *L3 = root->right->right;
-    L1->left = L3;
-    L1->right = L2;
-    L2->left = L1;
-    L2->right = L3;
-    L3->left = L2;
-    L3->right = L1;
-	  printf("height%d\n", height(root));
-*/
-
+  sort012();
+  print_list();
+  remove_duplicate_1();
+  print_list();
+//  rearrange_eo();
+//  print_list();
+  palindrome();
+  print_list();
+  top();
+  pop();
+  print_list();
+  struct Node* root = NULL;
+  root = allocateNode(1);
+  root->left = allocateNode(2);
+  root->right = allocateNode(3);
+  root->left->left = allocateNode(4);
+  root->left->right = allocateNode(5);
+  root->right->right = allocateNode(6);
+  root->left->left->left = allocateNode(7);
+  struct Node *L1 = root->left->left->left;
+  struct Node *L2 = root->left->right;
+  struct Node *L3 = root->right->right;
+  L1->left = L3;
+  L1->right = L2;
+  L2->left = L1;
+  L2->right = L3;
+  L3->left = L2;
+  L3->right = L1;
+	printf("height%d\n", height(root));
+  print_list();
+  printf("Reverse kth\n");
+  reverse_kth(5);
+  print_list();
+  return 0;
 }
