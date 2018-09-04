@@ -2,7 +2,7 @@
 
 https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-questions-and-their-solutions
 
-## Linked List
+### Linked List
 
 * Introduction to Linked Lists
 * Linked List Implementation | Part 1
@@ -42,7 +42,7 @@ https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-que
 * Rearrange a Linked List by Separating Odd Nodes from the Even Ones
 * Calculate height of a binary tree with leaf nodes forming a circular doubly linked list
 
-## Graphs
+### Graphs
 
 * Terminology and Representations of Graphs
 * Graph Implementation using STL
