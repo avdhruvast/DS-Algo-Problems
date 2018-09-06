@@ -49,3 +49,9 @@ https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-que
 * Find first or last occurrence of a given number in a sorted array
 * Count occurrences of a number in a sorted array with duplicates
 * Find smallest missing element from a sorted array
+* Find Floor and Ceil of a number in a sorted array
+* Search in a nearly sorted array in O(logn) time
+* Find number of 1’s in a sorted binary array
+* Find the peak element in an array
+* Maximum Sum Subarray using Divide & Conquer
+* Find Minimum and Maximum element in an array using minimum comparisons
