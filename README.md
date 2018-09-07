@@ -55,3 +55,9 @@ https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-que
 * Find the peak element in an array
 * Maximum Sum Subarray using Divide & Conquer
 * Find Minimum and Maximum element in an array using minimum comparisons
+* Efficiently implement power function | Recursive and Iterative
+* Find Missing Term in a Sequence in log(n) time
+* Division of Two Numbers using Binary Search Algorithm
+* Find Frequency of each element in a sorted array containing duplicates
+* Ternary Search vs Binary search
+* Exponential search
