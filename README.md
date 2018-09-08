@@ -61,3 +61,8 @@ https://techiedelight.quora.com/500-Data-Structures-and-Algorithms-interview-que
 * Find Frequency of each element in a sorted array containing duplicates
 * Ternary Search vs Binary search
 * Exponential search
+* Interpolation search
+* Merge Sort Algorithm
+* Iterative Merge Sort Algorithm (Bottom-up Merge Sort)
+* Inversion Count of an array
+* Quicksort Algorithm
