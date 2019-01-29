@@ -1,4 +1,4 @@
-# 500 Data Structures and Algorithms interview questions 
+# Data Structures and Algorithms questions 
 
 ### Linked List
 
